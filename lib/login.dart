@@ -85,9 +85,9 @@ class _SecondRouteState extends State<SecondRoute> {
                                 validator: (value) {
                                   if (RegExp(emailRegex).hasMatch(value!)) {
                                   } else if (value == null || value.isEmpty) {
-                                    return "Field cannot be empty";
+                                    return "* Required";
                                   } else {
-                                    return "Email is not correctly formatted";
+                                    return "Enter valid email id";
                                   }
                                 },
                               ),
@@ -103,9 +103,9 @@ class _SecondRouteState extends State<SecondRoute> {
                                     border: OutlineInputBorder()),
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
-                                    return "Field cannot be empty";
-                                  } else if (value.length < 5) {
-                                    return "Must be at least 8 chars";
+                                    return "* Required";
+                                  } else if (value.length < 8) {
+                                    return "Should be at least 8 chars";
                                   } else {
                                     return null;
                                   }
