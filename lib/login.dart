@@ -82,6 +82,7 @@ class _SecondRouteState extends State<SecondRoute> {
                                     hintText: "Email",
                                     hintStyle: TextStyle(color: Colors.white),
                                     border: OutlineInputBorder()),
+                                autovalidateMode: AutovalidateMode.onUserInteraction,
                                 validator: (value) {
                                   if (RegExp(emailRegex).hasMatch(value!)) {
                                   } else if (value == null || value.isEmpty) {
@@ -101,6 +102,7 @@ class _SecondRouteState extends State<SecondRoute> {
                                     hintText: "Password",
                                     hintStyle: TextStyle(color: Colors.white),
                                     border: OutlineInputBorder()),
+                                autovalidateMode: AutovalidateMode.onUserInteraction,
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
                                     return "* Required";

@@ -179,15 +179,79 @@ class FifthRoute extends StatelessWidget {
               margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
               child: ListTile(
                 leading: Icon(
-                  Icons.account_box,
+                  Icons.location_city,
                   color: Colors.purple,
                 ),
                 title: Text(
-                  'Address: #747 Songkoy Calasiao, Pangasinan' +
-                      '\nPhone Number: +639275272373' +
-                      '\nEmail: mmaynigo2@gmail.com' +
-                      '\nBirthday: June 14, 2001' +
-                      '\nNationality: Filipino',
+                  'Address: #747 Songkoy Calasiao, Pangasinan',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontFamily: 'Times New Roman',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.purple,
+                ),
+                title: Text(
+                  '\nPhone Number: +639275272373',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontFamily: 'Times New Roman',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.purple,
+                ),
+                title: Text(
+                  '\nEmail: mmaynigo2@gmail.com',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontFamily: 'Times New Roman',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.cake,
+                  color: Colors.purple,
+                ),
+                title: Text(
+                  '\nBirthday: June 14, 2001' ,
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontFamily: 'Times New Roman',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.nat,
+                  color: Colors.purple,
+                ),
+                title: Text(
+                  '\nNationality: Filipino',
                   style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontFamily: 'Times New Roman',

@@ -90,10 +90,10 @@ class _ThirdRouteState extends State<ThirdRoute> {
                               border: OutlineInputBorder()),
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           validator: (value) {
-                            if (value!.isEmpty || !RegExp(r'^[a-z A-Z]+$').hasMatch(value)) {
+                            if (value!.isEmpty) {
+                              return 'Please enter your name';
+                            } else if (!RegExp(r'^[a-z A-Z]+$').hasMatch(value) || value.length <=2){
                               return 'Should enter alphabets only!';
-                            } else {
-                              return null;
                             }
                           },
                           onSaved: (value) {},
