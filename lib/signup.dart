@@ -187,7 +187,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                           validator: (value) {
                             if (value!.isEmpty) {
                               return 'Please enter your phone number ';
-                            } else if (value.length < 12 || value.length >12) {
+                            } else if (value.length < 11 || value.length >11) {
                               return 'Please enter valid phone number';
                             }
                             return null;
