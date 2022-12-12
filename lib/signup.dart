@@ -91,7 +91,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           validator: (value) {
                             if (value!.isEmpty) {
-                              return 'Please enter your name';
+                              return 'Please enter your full name';
                             } else if (!RegExp(r'^[a-z A-Z]+$').hasMatch(value) || value.length <=2){
                               return 'Should enter alphabets only!';
                             }
@@ -167,7 +167,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                           validator: (value) {
                             if (RegExp(emailRegex).hasMatch(value!)) {
                             } else if (value == null || value.isEmpty) {
-                              return "* Required";
+                              return "*Required";
                             } else {
                               return "Enter valid email id";
                             }
