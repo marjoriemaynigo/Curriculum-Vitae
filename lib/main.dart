@@ -37,7 +37,7 @@ class HomeRoute extends StatelessWidget {
                 children: [
                   Padding(padding: EdgeInsets.only(top: 150)),
                   Text(
-                    "WELCOME!",
+                    "WELCOME AGAIN!",
                     style: TextStyle(
                         fontFamily: 'Times New Roman',
                         color: Colors.white,

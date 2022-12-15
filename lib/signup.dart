@@ -179,7 +179,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                             bottom: 15, left: 10, right: 10),
                         child: TextFormField(
                           decoration: InputDecoration(
-                              hintText: "Phone No.",
+                              hintText: "Phone No.:",
                               hintStyle: TextStyle(color: Colors.white),
                               border: OutlineInputBorder()),
                           keyboardType: TextInputType.number,
